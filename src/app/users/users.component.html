@@ -1,0 +1,73 @@
+
+<div  *ngIf="items.length!=0">
+
+<button routerLink="/posts">Posts</button>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Street</th>
+    <th>Suite</th>
+    <th>City</th>
+    <th>Zipcode</th>
+    <th>Geo.lat</th>
+    <th>Geo.lng</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Company.name</th>
+    <th>Company.catchPhrase</th>
+    <th>Company.bs</th></tr>
+   <tr *ngFor="let item of items"><td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.username}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.address.street}}</td>
+    <td> {{item.address.suite}}</td>
+    <td> {{item.address.city}}</td>
+    <td>{{item.address.zipcode}}</td>
+    <td>{{item.address.geo.lat}}</td>
+    <td>{{item.address.geo.lng}}</td>
+    <td>{{item.phone}}</td>
+    <td>{{item.website}}</td>
+    <td> {{item.company.name}}</td>
+    <td> {{item.company.catchPhrase}}</td>
+    <td> {{item.company.bs}}</td></tr>
+
+</table>
+
+
+</div>
+
+<!--  <span>{{todo.userId}}</span>-->
+
+
+
+
+
+
+<!--  <span>{{item.id}}</span>-->
+<!--  <span>{{item.name}}</span>-->
+<!--  <span>{{item.username}}</span>-->
+
+<!--  <span>{{item.email}}</span>-->
+<!--  <span>{{item.address.street}}</span>-->
+<!--  <span>{{item.address.suite}}</span>-->
+<!--  <span>{{item.address.city}}</span>-->
+<!--  <span>{{item.address.zipcode}}</span>-->
+<!--  <span>{{item.address.geo.lat}}</span>-->
+<!--  <span>{{item.address.geo.lng}}</span>-->
+<!--  <span>{{item.phone}}</span>-->
+<!--  <span>{{item.website}}</span>-->
+<!--  <span>{{item.company.name}}</span>-->
+<!--  <span>{{item.company.catchPhrase}}</span>-->
+<!--  <span>{{item.company.bs}}</span>-->
+
+
+
+
+
+
+
+

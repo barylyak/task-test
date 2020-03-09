@@ -1,0 +1,18 @@
+<div *ngIf="items.length!=0">
+<button class="btnadd" routerLink="/add-new">Add new</button>
+<div class="table" >
+
+<table>
+  <tr>
+    <th>Users ID</th>
+    <th>Title Post</th>
+    <th>Body Post</th></tr>
+  <tr  *ngFor="let item of items">
+  <td>{{item.userId}} <button class="btndetails" (click)="showPost(item)" routerLink="/details">Details</button></td>
+  <td>{{item.title}}</td>
+  <td>{{item.body}}</td></tr>
+</table>
+
+</div>
+</div>
+<!--<app-modal-menu></app-modal-menu>-->

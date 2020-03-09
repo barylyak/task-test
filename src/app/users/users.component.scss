@@ -1,0 +1,39 @@
+table{
+  border: 1px solid black;
+  //width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px 0px;
+}
+
+
+tr {
+  text-align: left; /* Выравнивание по левому краю */
+  background: #ccc; /* Цвет фона ячеек */
+  padding: 5px; /* Поля вокруг содержимого ячеек */
+  border: 1px solid black; /* Граница вокруг ячеек */
+}
+td {
+  padding: 5px; /* Поля вокруг содержимого ячеек */
+  border: 1px solid black; /* Граница вокруг ячеек */
+}
+th{
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 16px;
+
+}
+button{
+  padding: 10px;
+  background-color: gray;;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3sec;
+}
+button:hover{
+  background-color: darkslategrey;
+  color: white;
+}
